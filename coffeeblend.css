@@ -1,0 +1,1469 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* defaults */
+body {
+    background-image: url(img/imgi_5_bg_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* MULTIPLE MEDIA QUERIES ARE USED DUE PRESENCE OF DISTINCT STRUCTURES ON DIFFERENT DEVICES. 
+DIFFERENTIATED AS SMARTPHONES, TABLETS AND LAPTOPS.*/
+
+/* UNIVERSAL QUERY */
+@media (max-width: 1238px) {
+    body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Damage control. for ipad air and galaxy tab s7 */
+    .booking-form {
+        min-width: 100vw;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* HEADER STYLING */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+nav {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.3rem;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.logo p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+nav button {
+    background: none;
+    color: white;
+    width: 50px;
+    font-size: 27px;
+    border: none;
+    cursor: pointer;
+}
+nav button>a{
+    color: white;
+}
+nav button>a:hover{
+    color: #C49B63;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    transition: 0.3s ease all;
+}
+
+li a:hover {
+    color: #C49B63;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+.menu i {
+    font-size: 1.5rem;
+}
+
+/* HEADER QUERY */
+/* SOME TABLETS AND ALL SMARTPHONES */
+@media (max-width: 882px) {
+    nav {
+        padding: 0.8rem 2rem;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    nav button {
+        display: none;
+    }
+
+}
+
+/* FIRST SECTION */
+.section1 {
+    width: 100vw;
+    height: 90vh;
+    background-image: url("img/imgi_8_bg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    padding: 0rem 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.section1 h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.section1 h6 {
+    color: #C49B63;
+    font-family: "Great Vibes", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section1 p {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section1 .order{
+    background: #C49B63;
+    border: 1px solid #C49B63;
+    padding: 1rem 1rem;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.section1 .order a{
+    text-decoration: none;
+    color: black;
+}
+.section1 .order:hover {
+    background: none;
+    color: #C49B63;
+    border: 1px solid #C49B63;
+    a{
+        text-decoration: none;
+        color: #C49B63;
+    }
+}
+
+.section1 .view-menu {
+    background: none;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.section1 .view-menu:hover {
+    background: #C49B63;
+    color: black;
+    border: 1px solid #C49B63;
+}
+
+/* 1ST SECTIOON QUERY */
+/* tablets and smartphones */
+@media (max-width: 882px) {
+    .section1 {
+        padding: 0rem 2rem;
+    }
+
+    .section1 h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .section1 p {
+        font-size: 1rem;
+    }
+}
+
+/* location and enquires section */
+.location-info {
+    width: 100vw;
+    padding: 2rem 10rem;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: first baseline;
+    gap: 1rem;
+}
+
+.location i {
+    font-size: 1.3rem;
+    color: #C49B63;
+}
+
+.location {
+    display: flex;
+    gap: 1.1rem;
+    align-items: first baseline;
+    justify-content: center;
+}
+
+.info {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.boldtext {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.greytext {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 17.5px;
+    color: #808080;
+}
+
+/* LOCATION SECTION QUERY */
+@media (max-width: 1069px) {
+    .location-info {
+        flex-direction: column;
+        padding: 2rem 2rem;
+        gap: 2rem;
+    }
+}
+
+/* USED MULTIPLE QUERIES DUE TO PROBLEMS WITH SCREEN SIZES */
+
+/* BOOKING FORM SECTION */
+.booking-form {
+    width: 549px;
+    padding: 1rem;
+    background-color: #C49B63;
+    position: absolute;
+    left: 63.9%;
+    top: 678.317px;
+    overflow: hidden;
+}
+
+.booking-form h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 19px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form .names {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid white;
+    width: 250px;
+    background: none;
+}
+
+.fname,
+.lname,
+.date,
+.time,
+.phone {
+    display: flex;
+    flex-direction: column;
+}
+
+form .booking-details {
+    display: flex;
+    gap: 1rem;
+}
+
+#date,
+#time,
+#phone {
+    width: 161px;
+}
+
+form .finish {
+    display: flex;
+    gap: 1rem;
+}
+
+.remark {
+    display: flex;
+    flex-direction: column;
+}
+
+.remark textarea {
+    width: 250px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid white;
+    background: none;
+}
+
+.finish button {
+    width: 250px;
+    border: none;
+    background-color: white;
+}
+
+label {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+/* BOOKING FORM QUERY */
+/* Tablets and smartphones */
+@media (max-width: 1230px) {
+    .booking-form {
+        width: 100vw;
+        padding: 1rem 2rem;
+        position: initial;
+    }
+
+    .names,
+    .booking-details,
+    .finish {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .finish button {
+        padding: 1rem;
+    }
+}
+
+/* MODIFIED MEDIA QUERY FOR MACBOOK AIR */
+@media (max-width: 1290px) {
+    .location-info {
+        padding: 2rem 0.5rem;
+        gap: 0.1rem;
+    }
+
+    .booking-form {
+        padding: 1rem;
+        left: 57.5%;
+        top: 43.332rem;
+    }
+}
+
+/* "DISCOVER OUR STORY" SECTION  STYLING*/
+.about-img {
+    width: 100vw;
+    height: 84vh;
+}
+
+.aboutimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.discover {
+    width: 650px;
+    padding: 2rem 2rem 3rem 2rem;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+.discover h2 {
+    color: #C49B63;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.discover p {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.discover h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+}
+
+.sec3 {
+    display: flex;
+}
+
+/* "DISCOVER OUR STORY" MEDIA QUERY */
+/* some tablets and smartphones */
+@media (max-width: 882px) {
+    .about-img {
+        height: 70vh;
+    }
+
+    .aboutimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sec3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discover {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* LIGHT BROWN SECTION MEDIA QUERY. MODIFIED FOR TABLETS.*/
+    .light-brown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* LIGHT BROWN SECTION */
+.light-brown {
+    width: 100%;
+    background-color: #C49B63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 4rem 4rem 4rem;
+    gap: 1rem;
+}
+
+.testimonial h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.testimonial .mini {
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    width: 400px;
+}
+
+.mini i {
+    font-size: 3rem;
+}
+
+/* LIGHT BROWN SECTION MEDIA QUERY. MODIFIED FOR SMARTPHONES. */
+@media (max-width: 600px) {
+    .light-brown {
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
+
+/* Discover our menu section */
+.lilmenu {
+    height: 90vh;
+    width: 100vw;
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.discover-our-menu {
+    width: 42%;
+    text-align: right;
+}
+
+.discover-our-menu h2 {
+    color: #C49B63;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.discover-our-menu h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+}
+
+.discover-our-menu p {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.discover-our-menu button {
+    background: none;
+    border: 1px solid #C49B63;
+    padding: 1rem 1rem;
+    color: #C49B63;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    margin-top: 1.5rem;
+}
+
+.discover-our-menu button:hover {
+    background: #C49B63;
+    color: white;
+    border: 1px solid #C49B63;
+}
+
+.imageset1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.imageset1 img {
+    width: 230px;
+    height: 200px;
+}
+
+.imageset2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 40px;
+}
+
+.imageset2 img {
+    width: 230px;
+    height: 200px;
+}
+
+/* Discover our menu query */
+@media (max-width: 882px) {
+    .lilmenu {
+        flex-direction: column;
+        padding: 2rem 2rem;
+        height: auto;
+    }
+
+    .discover-our-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imageset1,
+    .imageset2 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .imageset1 img,
+    .imageset2 img {
+        width: 150px;
+        height: 130px;
+    }
+}
+
+/* Awards and stats section */
+.award-stats {
+    height: 50vh;
+    width: 100vw;
+    padding: 4rem;
+    background-image: url(img/imgi_6_bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 9rem;
+}
+
+.mug {
+    border: #C49B63 1px solid;
+    padding: 1.5rem;
+    transition: 0.3s ease all;
+}
+
+.mug:hover {
+    transform: rotate(135deg);
+    background-color: #C49B63;
+
+    i {
+        color: black;
+        transform: rotate(-135deg);
+    }
+
+    /* You can style an element inside the style of another element as long as the element is a content of the container element.
+    Here "i" is the content of .mug, therefore we can style what the content does when the container undergoes an animation.
+    
+    We counter rotated i to ensure that the icon stays upright when the container rotates. to counter rotate, we negate the deg of rotation that the container undergoes.
+    i.e .mug rotates 135deg
+        i rotates -135deg.
+        
+        simple*/
+}
+
+.mug i {
+    font-size: 2rem;
+    color: #C49B63;
+    width: 100%;
+    height: 100%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    backdrop-filter: blur(1px);
+}
+
+.stats h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+}
+
+.stats p {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+/* Awards and stats section query */
+@media (max-width: 882px) {
+    .award-stats {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2rem;
+        height: auto;
+        gap: 4rem;
+    }
+}
+
+/* BEST-COFFEE-SELLERS SECTION STYLING */
+.best-coffee {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-best-coffee h2 {
+    color: #C49B63;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+.discover-best-coffee h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+}
+
+.best-coffee-desc {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.best-coffee-menu {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.tea {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.tea-desc {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 270px;
+}
+
+.tea img {
+    width: 230px;
+    height: 200px;
+}
+
+.tea .capuccino {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.tea .price {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.tea button {
+    background: none;
+    border: 1px solid #C49B63;
+    padding: 0.5rem 0.5rem;
+    color: #C49B63;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.tea button:hover {
+    background: #C49B63;
+    color: white;
+    border: 1px solid #C49B63;
+}
+
+/* BEST-COFFEE-SELLERS SECTION QUERY */
+@media (max-width: 882px) {
+    .best-coffee {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .discover-best-coffee h2,
+    .discover-best-coffee h1 {
+        text-align: center;
+    }
+
+    .best-coffee-menu {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        height: auto
+    }
+}
+
+@media (max-width: 1030px) and (min-width: 883px) {
+    .best-coffee {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .best-coffee-menu {
+        margin-top: 0.5rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+}
+
+/* DISCOVER-OUR-PRODUCTS SECTION */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-img {
+    display: flex;
+    justify-content: space-between;
+    /* or space-around / space-evenly */
+    align-items: center;
+    flex-wrap: nowrap;
+    /* prevent wrapping */
+    margin-bottom: 5rem;
+}
+
+.product-img img {
+    height: 35vh;
+    width: 25%;
+    /* ensures all fit in one row */
+    max-width: 100%;
+
+}
+
+.products h2 {
+    color: #C49B63;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+.products h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+}
+
+.products p {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.food-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.food-buttons button {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #C49B63;
+    padding: 1rem 1rem;
+    color: #C49B63;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.food-buttons button:hover {
+    background-color: #C49B63;
+    color: white;
+}
+
+.food-items {
+    display: flex;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.food-selections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.food-selections img {
+    width: 330px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.food-selections .beef-heading {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.food-selections .meal-desc {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 330px;
+}
+
+.food-selections button {
+    background: none;
+    border: 1px solid #C49B63;
+    padding: 0.5rem 0.5rem;
+    color: #C49B63;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.food-selections .price-mark {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.food-selections button:hover {
+    background: #C49B63;
+    color: white;
+    border: 1px solid #C49B63;
+}
+
+/* DISCOVER-OUR-PRODUCTS MEDIA QUERY */
+@media (max-width: 882px) {
+    .food-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .products .product-img {
+        flex-direction: column;
+        align-items: center;
+        padding: none;
+        gap: 1rem;
+    }
+
+    .product-img img {
+        width: 100%;
+    }
+}
+
+/* CUSTOMER TESTIMONIALS SECTION */
+.customer-testimonials {
+    background-image: url(img/imgi_8_bg_1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.testimony-header h2 {
+    color: #C49B63;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+.testimony-header h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+}
+
+.customer-testimonials p {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.the-testimony {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 6rem;
+}
+
+.testimony1 {
+    /* height: 40vh; */
+    max-width: 20%;
+    background-color: #C49B63;
+    padding: 1rem 2rem;
+}
+
+.testimony2 {
+    max-width: 20%;
+    background-color: #AF8A58;
+    padding: 1rem 2rem;
+}
+
+.testimony1 p,
+.testimony2 p {
+    text-align: left;
+    font-size: 19px;
+}
+
+.microtext {
+    margin-top: 1rem;
+    display: flex;
+    align-items: last baseline;
+    gap: 10px;
+}
+
+.microtext img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.inside-info h6 {
+    font-weight: 300;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Customer testimonial query */
+@media (max-width: 1030px) {
+    .testimony-header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimony-header h1 {
+        text-align: center;
+    }
+
+    .the-testimony {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6rem;
+        /* gap: 0.2rem; */
+    }
+
+    .testimony1,
+    .testimony2 {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* RECENT-FROM-BLOG SECTION */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 6rem;
+}
+
+.blog h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.blog p {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.blog-post {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content img {
+    width: 330px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.blog-content p {
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 330px;
+}
+
+.blog-content .deli {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 600px;
+}
+
+@media (max-width:1030px) {
+    .blog {
+        padding: 2rem;
+    }
+
+    .blog h1 {
+        text-align: center;
+    }
+
+    .blog-post {
+        flex-direction: column;
+    }
+}
+.finish-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #120F0F;
+}
+.about-contacts{
+    padding: 4rem;
+    background-color: #120F0F;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3rem;
+}
+.about-us,.recent,.services,.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-us h2,
+.recent h2,
+.services h2,
+.questions h2{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+}
+.about-us p{
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 240px;
+}
+.blog-id{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 330px;
+}
+.blog-id img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.leading-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.lil-details h2{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 240px;
+}
+.lil-details p{
+    color: #808080;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 240px;
+    position: relative;
+    bottom: 8px;
+}
+.services ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.services ul li>a{
+    color: #aeaeae;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 240px;
+}
+.questions h1{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 240px;
+}
+.questions div{
+    display: flex;
+    gap: 0.7rem;
+}
+.questions div>i{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    top: 16px;
+}
+.questions p{
+    color: #d7cbcb;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 240px;
+}
+/*social-media*/
+.social-media{
+    display: flex;
+    gap: 1rem;
+}
+.social-media a{
+    color: white;
+    font-size: 4.2rem;
+}
+.social-media a:hover{
+    color: blue;
+}
+/* copyright */
+.Copyright{
+    color: #c8c4c4;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 25px;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 700px;
+}
+.Copyright a{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.Copyright a:hover{
+    color: #C49B63;
+}
+@media (max-width:1030px) {
+    .about-contacts{
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+    }
+    .about-us p{
+        max-width: 100%;
+    }
+}

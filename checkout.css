@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* defaults */
+body {
+    background-image: url(img/imgi_5_bg_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* MULTIPLE MEDIA QUERIES ARE USED DUE PRESENCE OF DISTINCT STRUCTURES ON DIFFERENT DEVICES. 
+DIFFERENTIATED AS SMARTPHONES, TABLETS AND LAPTOPS.*/
+
+/* UNIVERSAL QUERY */
+@media (max-width: 1238px) {
+    body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Damage control. for ipad air and galaxy tab s7 */
+    .booking-form {
+        min-width: 100vw;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* HEADER STYLING */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+nav {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.3rem;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.logo p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+nav button {
+    background: none;
+    color: white;
+    width: 50px;
+    font-size: 27px;
+    border: none;
+    cursor: pointer;
+}
+nav button>a{
+    color: white;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    transition: 0.3s ease all;
+}
+
+li a:hover {
+    color: #C49B63;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu p {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+.menu i {
+    font-size: 1.5rem;
+}
+
+/* HEADER QUERY */
+/* SOME TABLETS AND ALL SMARTPHONES */
+@media (max-width: 882px) {
+    nav {
+        padding: 0.8rem 2rem;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    nav button {
+        display: none;
+    }
+
+}
+
+.checking{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(img/imgi_7_bg_3.jpg);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    padding: 0rem 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.checking h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    line-height: 4rem;
+}
+.checking button{
+    display: none;
+    background-color: #C49B63;
+    border: 1px solid #C49B63;
+    padding: 1rem 1rem;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.checking button a{
+    text-decoration: none;
+    color: white;
+}
+.checking button:hover{
+    background: black;
+    color: #C49B63;
+    border: 1px solid #C49B63;
+    a{
+        text-decoration: none;
+        color: #C49B63;
+    }
+}
+@media (max-width: 882px) {
+    .checking {
+        padding: 0rem 2rem;
+    }
+
+    .checking h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .section1 p {
+        font-size: 1rem;
+    }
+    .checking button{
+        display: block;
+    }
+}
+.fill-the-form{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 2rem;
+}
+.form-function{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-function form .form-selected>select{
+    width: 600px;
+    background: none;
+    padding: 1.5rem;
+    color: slategrey;
+    border: 2px solid #C49B63;
+}
+.form-function form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: black;
+    width: fit-content;
+    padding: 3rem;
+}
+.form-function form>h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 23px;
+}
+.form-function form .fname-lname{
+    display: flex;
+    gap: 1rem;
+}
+.fname-lname div,.form-selected{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.fname-lname div input{
+    width: 292px;
+    background: none;
+    padding: 1.5rem;
+    color: slategrey;
+    border: 2px solid slategrey;
+}
+.fname-lname div>label{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 19px;
+}
+.kingsec{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.total div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-right: 10rem;
+}
+
+.Cart{
+    background-color: black;
+    width: 350px;
+    padding: 2rem;
+
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cart-total h2,.payment-methods h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 23px;
+}
+
+.total div p{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: slategray;
+    font-size: 17px;
+}
+.payment-methods{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: black;
+}
+.payment-methods button{
+    background-color: #C49B63;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+.the-methods div{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.the-methods div input{
+    width: 20px;
+    height: 20px;
+}
+
+.checkup input{
+    width: 20px;
+    height: 20px;
+}
+.checkup{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+@media (max-width: 882px) {
+    .form-function form{
+        width: 100%;
+    }
+    .fill-the-form {
+        padding: 0rem;
+        flex-direction: column;
+    }
+
+    .fname-lname{
+        flex-direction: column;
+    }
+}

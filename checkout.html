@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Blend - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" href="img/brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz-removebg-preview.png">
+    <link rel="stylesheet" href="coffeeblend.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons CDN -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>COFFEE</h2>
+                <p>BLEND</p>
+            </div>
+            <ul>
+                <li><a href="coffeeblend.html">HOME</a></li>
+                <li><a href="">MENU</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <button><a href=""><i class='bx  bx-cart'></i></a></button>
+            <button class="menu"><i class='bx  bx-menu'></i>
+                <p>MENU</p>
+            </button>
+        </nav>
+    </header>
+    <section class="checking">
+        <h1>CHECKOUT</h1>
+        <button><a href="coffeeblend.html">Home</a></button>
+    </section>
+    <section class="fill-the-form">
+        <div class="form-function">
+            <form action="">
+                <h2>BILLING DETAILS</h2>
+                <div class="fname-lname">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="firstname" name="fname" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lastname" name="lname" required>
+                    </div>
+                </div>
+                <div class="form-selected">
+                    <label for="">STATE/COUNTRY</label>
+                    <select id="country" name="country" required>
+                        <option value="" selected disabled hidden>Select Country</option>>Select Country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="mx">Mexico</option>
+                        <option value="gb">United Kingdom</option>
+                        <!-- Add more country options as needed -->
+                    </select>
+                </div>
+                <div class="fname-lname">
+                    <div>
+                        <label for="fname">Street Address</label>
+                        <input type="text" id="firstname" name="fname" required>
+                    </div>
+                    <div>
+                        <label for="">Appartment</label>
+                        <input type="text" id="lastname" name="lname" required>
+                    </div>
+                </div>
+                <div class="fname-lname">
+                    <div>
+                        <label for="fname">Town/City</label>
+                        <input type="text" id="firstname" name="fname" required>
+                    </div>
+                    <div>
+                        <label for="">Postcode/ZIP *</label>
+                        <input type="text" id="lastname" name="lname" required>
+                    </div>
+                </div>
+                <div class="fname-lname">
+                    <div>
+                        <label for="fname">Phone</label>
+                        <input type="tel" id="firstname" name="fname" required>
+                    </div>
+                    <div>
+                        <label for="">Email Address</label>
+                        <input type="email" id="lastname" name="lname" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="kingsec">
+            <div class="Cart">
+                <div class="cart-total">
+                    <h2>CART TOTAL</h2>
+                    <div class="total">
+                        <div>
+                            <p>Subtotal</p>
+                            <p>$100.00</p>
+                        </div>
+                        <div>
+                            <p>Shipping</p>
+                            <p>$10.00</p>
+                        </div>
+                        <div>
+                            <p>Discount</p>
+                            <p>$10.00</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Total</p>
+                            <p>$100.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-methods">
+                <h2>PAYMENT METHODS</h2>
+                <div class="the-methods">
+                    <div>
+                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                        <label for="credit-card">Credit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer">Bank Transfer</label>
+                    </div>
+                </div>
+                <div class="checkup">
+                    <input type="checkbox">
+                    <label for=""> I have read and accept the terms and conditions</label>
+                </div>
+                <button>Place an Order</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
